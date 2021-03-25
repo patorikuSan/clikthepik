@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Ninja dissapearing when clicked">
+		<title>cliK the piK</title>
+		<link rel="stylesheet" type="text/css" href="ninja.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('img').click(function(){
+					$(this).fadeOut();
+				});
+				$('.restore').click(function(){
+					$('img').show();
+				})
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>Disappearing ninjas</h1>
+			<div class="ninjas">
+				<img class="dojocat1" src="dojocat.jpg" alt="dojocat1">
+				<img class="dojocat2" src="dojocat.jpg" alt="dojocat">
+				<img class="dojocat3" src="dojocat.jpg" alt="dojocat">
+				<img class="dojocat4" src="dojocat.jpg" alt="dojocat">
+				<img class="dojocat5" src="dojocat.jpg" alt="dojocat">
+				<img class="dojocat6" src="dojocat.jpg" alt="dojocat">
+				<img class="dojocat7" src="dojocat.jpg" alt="dojocat">
+				<img class="dojocat8" src="dojocat.jpg" alt="dojocat">
+			</div>
+			<button class="restore">Restore</button>
+		</div>
+	</body>
+</html>
